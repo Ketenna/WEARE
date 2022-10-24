@@ -1,1 +1,1 @@
-{"version":3,"sources":["../vars/vars.scss","stylePageHome.scss","stylePageHome.css"],"names":[],"mappings":"AAAQ,2GAAA;ACCR;EACG,+BAAA;ACCH","file":"stylePageHome.css"}
+{"version":3,"sourceRoot":"","sources":["../vars/vars.scss","stylePageHome.scss"],"names":[],"mappings":"AAAQ;ACCR;EACI","file":"stylePageHome.css"}

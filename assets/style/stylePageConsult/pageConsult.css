@@ -1,0 +1,297 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  padding: 15px 0;
+  background-color: transparent;
+}
+.header .header__inner {
+  padding: 0 44px;
+}
+.header .header__inner .header__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header .header__inner .header__columns .header__logo-items {
+  display: flex;
+  justify-content: flex-start;
+}
+.header .header__inner .header__columns .header__logo-items .header__eng {
+  margin-left: 2.563em;
+  margin-right: 1.313em;
+  align-self: center;
+  text-decoration: none;
+  color: #000032;
+}
+.header .header__inner .header__columns .header__logo-items .header__rus {
+  margin-right: 1.313em;
+  align-self: center;
+  color: #000032;
+  text-decoration: none;
+}
+.header .header__inner .header__info-items {
+  display: flex;
+  /* скрываем чекбокс */
+  /* стилизуем кнопку */
+  /* добавляем "гамбургер" */
+  /* контейнер меню */
+  /* элементы меню */
+}
+.header .header__inner .header__info-items .header__number {
+  margin-right: 3em;
+  align-self: center;
+  color: #000032;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header .header__inner .header__info-items .header__consult {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.header .header__inner .header__info-items .header__consult .btn {
+  display: inline-block;
+  padding: 10px 40px;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 67px;
+  background-color: transparent;
+  color: #000032;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.header .header__inner .header__info-items #menu__toggle {
+  opacity: 0;
+}
+.header .header__inner .header__info-items .menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center; /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 30px;
+  right: 4em;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  width: 36px;
+}
+.header .header__inner .header__info-items .menu__image {
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
+.header .header__inner .header__info-items .menu__btn > span,
+.header .header__inner .header__info-items .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000032;
+}
+.header .header__inner .header__info-items .menu__btn > span::after {
+  content: "";
+  top: 8px;
+  width: 80%;
+}
+.header .header__inner .header__info-items .menu__box {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 8.5em 0;
+  list-style: none;
+  background-image: url(/assets/images/imgHeader/news-background.png);
+  opacity: 1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.header .header__inner .header__info-items .menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "PT Mono", monospace;
+  font-size: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header .header__inner .header__info-items .menu__item sup {
+  margin: 20px;
+}
+.header .header__inner .header__info-items .menu__item .menu__columns {
+  background-image: url(/assets/style/imagesHeader/Vector.png);
+}
+.header .header__inner .header__info-items .menu__item:hover {
+  color: #ffffff;
+}
+.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  width: 100%;
+}
+.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.consult {
+  margin: 11% 10% 4% 15%;
+}
+.consult .consult__inner .consult__title {
+  width: 20%;
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 110%;
+  color: #000032;
+  margin-bottom: 2%;
+}
+.consult .consult__inner .consult__subtitle {
+  width: 50%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000032;
+}
+.consult .consult__form {
+  margin-top: 6%;
+}
+.consult .consult__form .consult__form-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.consult .consult__form .consult__form-flex #name,
+.consult .consult__form .consult__form-flex #number,
+.consult .consult__form .consult__form-flex #email {
+  font-size: 20px;
+}
+.consult .consult__form .consult__form-flex input[type=text],
+.consult .consult__form .consult__form-flex input[type=number],
+.consult .consult__form .consult__form-flex input[type=email] {
+  border: transparent;
+  color: #000032;
+}
+.consult .consult__form .consult__form-flex .consult__name:after,
+.consult .consult__form .consult__form-flex .consult__number:after,
+.consult .consult__form .consult__form-flex .consult__email::after {
+  content: "";
+  margin-top: 5%;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 50, 0.4);
+}
+.consult .consult__form .consult__form-flex input[type=text]:focus,
+.consult .consult__form .consult__form-flex input[type=number]:focus,
+.consult .consult__form .consult__form-flex input[type=email]:focus {
+  outline: none;
+}
+.consult .consult__form .consult__form-flex .consult__label::after {
+  color: red;
+  content: "*";
+  position: relative;
+  bottom: 10px;
+}
+.consult .consult__form .consult__form-flex ::-webkit-input-placeholder {
+  color: #000032;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+}
+.consult .consult__form .consult__task::after {
+  content: "";
+  margin-top: 2%;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 50, 0.4);
+}
+.consult .consult__form input[type=text]:focus {
+  outline: none;
+}
+.consult #task {
+  font-size: 20px;
+  width: 100%;
+  border: transparent;
+  color: #000032;
+}
+.consult .consult__checkbox {
+  margin-top: 5%;
+  /* прячем input checkbox */
+  /* стили для метки */
+  /* формируем внешний вид чекбокса в псевдоэлементе before */
+  /* вариации внешнего вида в зав-ти от статуса checkbox */
+  /* checked */
+}
+.consult .consult__checkbox input[type=checkbox] {
+  display: none;
+}
+.consult .consult__checkbox label {
+  color: #000032;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.consult .consult__checkbox label:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  vertical-align: middle;
+}
+.consult .consult__checkbox input:checked + label:before {
+  content: "";
+  background: linear-gradient(112.73deg, #1e4fc6 1.67%, #5e1ec6 100%);
+  background-image: url(/assets/images/imgHeader/checked.png);
+  background-repeat: no-repeat;
+}
+.consult .consult__checkbox .agree__link {
+  color: #000032;
+  cursor: pointer;
+}
+.consult .consult__send {
+  margin-top: 5%;
+  padding: 2% 5%;
+  background: linear-gradient(112.73deg, #1e4fc6 1.67%, #5e1ec6 100%);
+  border-radius: 67px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.consult__footer {
+  margin: 0 0 0 5%;
+}
+.consult__footer .consult__footer-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+}/*# sourceMappingURL=pageConsult.css.map */

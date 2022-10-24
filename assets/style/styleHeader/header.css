@@ -1,1 +1,156 @@
-/*# sourceMappingURL=header.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+.header .header__inner {
+  padding: 0 44px;
+}
+.header .header__inner .header__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header .header__inner .header__columns .header__logo-items {
+  display: flex;
+  justify-content: flex-start;
+}
+.header .header__inner .header__columns .header__logo-items .header__eng {
+  margin-left: 2.563em;
+  margin-right: 1.313em;
+  align-self: center;
+  text-decoration: none;
+  color: white;
+}
+.header .header__inner .header__columns .header__logo-items .header__rus {
+  margin-right: 1.313em;
+  align-self: center;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.header .header__inner .header__info-items {
+  display: flex;
+  /* скрываем чекбокс */
+  /* стилизуем кнопку */
+  /* добавляем "гамбургер" */
+  /* контейнер меню */
+  /* элементы меню */
+}
+.header .header__inner .header__info-items .header__number {
+  margin-right: 3em;
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header .header__inner .header__info-items .header__consult {
+  margin-right: 50px;
+  margin-top: 10px;
+}
+.header .header__inner .header__info-items .header__consult .btn {
+  display: inline-block;
+  padding: 10px 40px;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 67px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 38px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.header .header__inner .header__info-items #menu__toggle {
+  opacity: 0;
+}
+.header .header__inner .header__info-items .menu__btn {
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  align-items: center;
+  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 30px;
+  right: 4em;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  width: 36px;
+}
+.header .header__inner .header__info-items .menu__image {
+  position: relative;
+  right: 20px;
+  top: 5px;
+}
+.header .header__inner .header__info-items .menu__btn > span,
+.header .header__inner .header__info-items .menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+.header .header__inner .header__info-items .menu__btn > span::after {
+  content: "";
+  top: 8px;
+  width: 80%;
+}
+.header .header__inner .header__info-items .menu__box {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 8.5em 0;
+  list-style: none;
+  background-image: url(/assets/images/imgHeader/news-background.png);
+  background-size: cover;
+  opacity: 1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+.header .header__inner .header__info-items .menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "PT Mono", monospace;
+  font-size: 50px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header .header__inner .header__info-items .menu__item sup {
+  margin: 20px;
+}
+.header .header__inner .header__info-items .menu__item .menu__columns {
+  background-image: url(/assets/style/imagesHeader/Vector.png);
+}
+.header .header__inner .header__info-items .menu__item:hover {
+  color: #ffffff;
+}
+.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  width: 100%;
+}
+.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}/*# sourceMappingURL=header.css.map */
