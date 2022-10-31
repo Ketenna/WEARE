@@ -1,0 +1,184 @@
+@import "../styleHeader/header.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    background-color: transparent;
+    .header__eng,
+    .header__rus {
+        color: #000032;
+    }
+    .header__number {
+        color: #000032;
+    }
+    .btn {
+        color: #000032;
+        border: 1px solid grey;
+    }
+    .menu__btn > span,
+    .menu__btn > span::after {
+        background-color: #000032;
+    }
+    .menu__btn {
+        position: relative;
+        top: 0;
+    }
+}
+
+.main {
+    margin: 0% 0% 5% 0%;
+    .news-inner__go-back {
+        margin: 10% 2% 0% 5%;
+    }
+    .consult {
+        margin: 0% 10% 2% 15%;
+        .consult__inner {
+            .consult__title {
+                width: 20%;
+                font-size: 52px;
+                text-transform: uppercase;
+                font-weight: 400;
+                line-height: 110%;
+                color: #000032;
+                margin-bottom: 2%;
+            }
+            .consult__subtitle {
+                width: 35%;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 140%;
+                color: #000032;
+            }
+        }
+        .consult__form {
+            margin-top: 6%;
+            width: 80%;
+            .consult__form-flex {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                #name,
+                #number,
+                #email {
+                    font-size: 16px;
+                }
+                input[type="text"],
+                input[type="number"],
+                input[type="email"] {
+                    border: transparent;
+                    color: #000032;
+                    font-size: 16px;
+                }
+                .consult__name:after,
+                .consult__number:after,
+                .consult__email::after {
+                    content: "";
+                    margin-top: 5%;
+                    display: block;
+                    height: 1px;
+                    background: rgba(0, 0, 50, 0.4);
+                }
+                input[type="text"]:focus,
+                input[type="number"]:focus,
+                input[type="email"]:focus {
+                    outline: none;
+                }
+                .consult__label::after {
+                    color: red;
+                    content: "*";
+                    position: relative;
+                    bottom: 5px;
+                }
+                ::-webkit-input-placeholder {
+                    color: #000032;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                }
+            }
+            .consult__task::after {
+                content: "";
+                margin-top: 1%;
+                display: block;
+                height: 1px;
+                background: rgba(0, 0, 50, 0.4);
+            }
+            input[type="text"]:focus {
+                outline: none;
+            }
+        }
+        #task {
+            font-size: 16px;
+            width: 100%;
+            border: transparent;
+            color: #000032;
+            margin-left: 10px;
+            margin-top: 3%;
+        }
+        .consult__checkbox {
+            margin-top: 3%;
+            input[type="checkbox"] {
+                display: none;
+            }
+            label {
+                color: #000032;
+                cursor: pointer;
+                font-weight: normal;
+                line-height: 30px;
+                font-size: 16px;
+                padding: 10px 0;
+            }
+            label:before {
+                content: " ";
+                color: #000;
+                display: inline-block;
+                margin-right: 15px;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                border: 1px solid #e3e3e3;
+                vertical-align: middle;
+            }
+            input:checked + label:before {
+                content: "";
+                background: linear-gradient(112.73deg, #a202ff 1.67%, #000fda 100%);
+                background-image: url(../../images/imgHeader/checked.png);
+                background-repeat: no-repeat;
+            }
+            .agree__link {
+                color: #000032;
+                cursor: pointer;
+            }
+        }
+        .consult__send {
+            margin-top: 5%;
+            padding: 2% 3%;
+            background: linear-gradient(112.73deg, #a202ff 1.67%, #000fda 100%);
+            border-radius: 67px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 97%;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            &:hover {
+                background: linear-gradient(112.73deg, #000fda 1.67%, #a202ff 100%);
+            }
+        }
+    }
+}
+
+.consult__footer {
+    margin: 0 0 1% 5%;
+    .consult__footer-text {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+    }
+}

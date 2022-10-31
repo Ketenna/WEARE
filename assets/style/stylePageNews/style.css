@@ -1,1 +1,430 @@
-/*# sourceMappingURL=style.css.map */
+@import "../styleHeader/header.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: static;
+  background-color: transparent;
+}
+.header .header__eng {
+  color: white;
+}
+.header .header__rus {
+  color: rgba(255, 255, 255, 0.3);
+}
+.header .header__number {
+  color: #000032;
+}
+.header .btn {
+  color: #ffffff;
+  border: 1px solid #fff;
+}
+.header .menu__btn > span,
+.header .menu__btn > span::after {
+  background-color: white;
+}
+.header .menu__btn {
+  position: relative;
+}
+
+body {
+  background-image: url(../../images/imgPageNews/big_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+}
+body .news-inner__go-back {
+  margin: 5% 0% 0% 8%;
+}
+body .news-inner__top {
+  color: black;
+  margin: 29% 20% 0% 0%;
+  background-color: #ffffff;
+  width: 80%;
+}
+body .news-inner__top .news-inner__box {
+  padding-left: 9.5em;
+  padding-top: 1.9em;
+}
+body .news-inner__top .news-inner__box .news-inner__date {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000032;
+}
+body .news-inner__top .news-inner__box .news-inner__title {
+  margin-right: 3%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #000032;
+  letter-spacing: 0.1em;
+}
+body .news-inner__bottom {
+  color: black;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+}
+body .news-inner__bottom .news-inner__subtitle {
+  padding-top: 3%;
+  padding-left: 4%;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000032;
+}
+body .news-inner__bottom .news-inner__article {
+  background-color: #ffffff;
+  width: 100%;
+}
+body .news-inner__bottom .news-inner__article .news-article {
+  margin-left: 20%;
+  padding-top: 3em;
+  width: 800px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000032;
+  text-align: justify;
+}
+body .news-inner__bottom .news-inner__article .news-article .new-article__passage {
+  padding-bottom: 1em;
+}
+body .news-inner__bottom .news-inner__article .news-article .new-article__title {
+  margin: 30px 0px;
+}
+body .news-inner__bottom .news-inner__article .news-article .new-article__list {
+  margin-left: 20px;
+}
+body .new-article__bold {
+  font-weight: bold;
+}
+body .news-article__picture {
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+body .news-article__picture .news-article__figcaption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: rgba(0, 0, 50, 0.8);
+}
+
+.other-news {
+  margin-top: 10%;
+  width: 100%;
+  color: #000032;
+}
+.other-news .news__title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #000032;
+}
+.other-news .news__title::after {
+  content: "";
+  margin-top: 3%;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 50, 0.2);
+  width: 100%;
+}
+.other-news .news__category-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #000032;
+}
+.other-news .news__category-items .news__wrapper {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+}
+.other-news .news__category-items .news__box {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+}
+.other-news .news__category-items .news__box .news__link {
+  text-decoration: none;
+}
+.other-news .news__category-items .news__box .box__about {
+  color: #000032;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.other-news .news__category-items .news__box .box__about .box__title {
+  margin: 20px 0px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000032;
+}
+.other-news .news__category-items .news__box .box__about .box__text {
+  font-size: 14px;
+  line-height: 130%;
+  text-decoration: none;
+}
+.other-news .news__category-items .news__box .news__comment {
+  width: 380px;
+}
+.other-news .news__category-items .news__box .news__comment:after {
+  content: "";
+  margin-bottom: 10%;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 50, 0.2);
+  width: 100%;
+}
+.other-news .news__category-items .news__box .news__comment .box__date {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 50, 0.6);
+}
+.other-news .news__category-items .news__box .news__comment .box__date .box__comment {
+  text-transform: uppercase;
+}
+.other-news .news__category-items .news__box .news__comment .box__date_first {
+  margin-bottom: 18px;
+}
+.other-news .news__category-items .news__comment_first {
+  margin-top: 20%;
+}
+.other-news .news__category-items .news__comment_second {
+  margin-top: 11%;
+}
+.other-news .news__category-items .news__comment_third {
+  margin-top: 8%;
+}
+
+.news-inner__contacts {
+  background-color: #fff;
+  width: 100%;
+}
+.news-inner__contacts .contacts__inner {
+  display: flex;
+  justify-content: center;
+}
+.news-inner__contacts .contacts__inner .contacts__items {
+  margin-top: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__title {
+  margin-left: 15%;
+  margin-right: 10%;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 110%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #000032;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__subtitle {
+  width: 80%;
+  margin-right: 15%;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000032;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form {
+  display: grid;
+  grid-template-areas: "Na Em" "Nu Ta" "Ch bu";
+  margin-top: 18%;
+  margin-bottom: 25%;
+  gap: 20%;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form #name,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form #number,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form #email {
+  font-size: 18px;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form input[type=text],
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form input[type=number],
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form input[type=email] {
+  border: transparent;
+  color: #000032;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form .consult__name:after,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form .consult__number:after,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form .consult__email::after,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form .consult__number:after {
+  content: "";
+  margin-top: 2%;
+  margin-bottom: 15%;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 50, 0.4);
+  width: 100%;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form input[type=text]:focus,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form input[type=number]:focus,
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form input[type=email]:focus {
+  outline: none;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form .consult__label::after {
+  color: red;
+  content: "*";
+  position: relative;
+  bottom: 5px;
+}
+.news-inner__contacts .contacts__inner .contacts__items .contacts__form ::-webkit-input-placeholder {
+  color: #000032;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+.news-inner__contacts .contacts__inner .contacts__items .consult__task::after {
+  content: "";
+  margin-top: 2%;
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 50, 0.4);
+}
+.news-inner__contacts .contacts__inner .contacts__items input[type=text]:focus {
+  outline: none;
+}
+.news-inner__contacts .contacts__inner #task {
+  font-size: 20px;
+  width: 100%;
+  border: transparent;
+  color: #000032;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox {
+  margin-top: 5%;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox input[type=checkbox] {
+  display: none;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox label {
+  color: #000032;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 17px;
+  padding: 10px 0;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox label:before {
+  content: " ";
+  color: #000;
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  vertical-align: middle;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox input:checked + label:before {
+  content: "";
+  background: linear-gradient(112.73deg, #1e4fc6 1.67%, #5e1ec6 100%);
+  background-image: url(../../images/imgHeader/checked.png);
+  background-repeat: no-repeat;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox .agree__link {
+  color: #000032;
+  cursor: pointer;
+  margin-left: 35px;
+}
+.news-inner__contacts .contacts__inner .consult__checkbox .agree__link_passage {
+  display: block;
+  padding-left: 38px;
+}
+.news-inner__contacts .contacts__inner .consult__send {
+  margin-top: 5%;
+  padding: 2% 5%;
+  background: linear-gradient(112.73deg, #a202ff 1.67%, #000fda 100%);
+  border-radius: 67px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 97%;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.news-inner__contacts .contacts__inner .consult__send:hover {
+  background: linear-gradient(112.73deg, #000fda 1.67%, #a202ff 100%);
+}
+.news-inner__contacts .contacts__inner .consult__send .consult__name {
+  grid-area: Na;
+}
+.news-inner__contacts .contacts__inner .consult__send .consult__number {
+  grid-area: Nu;
+}
+.news-inner__contacts .contacts__inner .consult__send .consult__email {
+  grid-area: Em;
+}
+.news-inner__contacts .contacts__inner .consult__send .consult__task {
+  grid-area: Ta;
+}
+.news-inner__contacts .contacts__inner .consult__send .consult__checkbox {
+  grid-area: Ch;
+}
+.news-inner__contacts .contacts__inner .consult__send .consult__send {
+  grid-area: bu;
+}
+.news-inner__contacts .contacts__inner .contacts__address {
+  margin: 1%;
+}
+.news-inner__contacts .contacts__inner .contacts__address .contacts__info {
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: start;
+}
+.news-inner__contacts .contacts__inner .contacts__address .contacts__info .contacts__info-link {
+  margin-left: 2%;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000032;
+  font-family: "PT Mono", monospace;
+  text-decoration: none;
+}
+
+.fixedbut {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 67px;
+  -webkit-transition: 0.33s all ease-out;
+  -o-transition: 0.33s all ease-out;
+  transition: 0.33s all ease-out;
+}
+
+.news__footer {
+  background-color: #fff;
+  width: 100%;
+}
+.news__footer .news__footer-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  margin-left: 8%;
+  padding-bottom: 2%;
+}/*# sourceMappingURL=style.css.map */
