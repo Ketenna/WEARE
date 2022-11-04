@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,46 +12,46 @@
   z-index: 9999;
   padding: 15px 0;
 }
-.header .header__inner {
+.header__inner {
   padding: 0 44px;
 }
-.header .header__inner .header__columns {
+.header__columns {
   display: flex;
   justify-content: space-between;
   padding-right: 44px;
 }
-.header .header__inner .header__columns .header__logo-items {
+.header__logo-items {
   display: flex;
   justify-content: flex-start;
 }
-.header .header__inner .header__columns .header__logo-items .header__eng {
-  margin-left: 2.563em;
-  margin-right: 1.313em;
+.header__eng {
+  margin-left: 2.5em;
+  margin-right: 1.3em;
   align-self: center;
   text-decoration: none;
 }
-.header .header__inner .header__columns .header__logo-items .header__rus {
-  margin-right: 1.313em;
+.header__rus {
+  margin-right: 1.3em;
   align-self: center;
   text-decoration: none;
 }
-.header .header__inner .header__info-items {
+.header__info-items {
   display: flex;
 }
-.header .header__inner .header__info-items .header__number {
+.header__number {
   margin-right: 3em;
   align-self: center;
   font-size: 20px;
   text-decoration: none;
   cursor: pointer;
   font-family: "PT Mono", monospace;
+  color: #ffffff;
 }
-.header .header__inner .header__info-items .header__consult {
-  margin-right: 50px;
-  margin-top: 10px;
+.header__consult {
+  margin-right: 10px 50px 0 0;
   padding-right: 93px;
 }
-.header .header__inner .header__info-items .header__consult .btn {
+.header__consult .btn {
   display: inline-block;
   padding: 10px 40px;
   position: relative;
@@ -62,13 +63,13 @@
   letter-spacing: 0.1em;
   text-align: center;
 }
-.header .header__inner .header__info-items .header__consult .btn:hover {
+.header__consult .btn:hover {
   color: #5e1ec6;
 }
-.header .header__inner .header__info-items #menu__toggle {
+.header .menu #menu__toggle {
   opacity: 0;
 }
-.header .header__inner .header__info-items .menu__btn {
+.header .menu__btn {
   display: flex;
   align-items: center;
   width: 36px;
@@ -76,41 +77,40 @@
   cursor: pointer;
   z-index: 1;
 }
-.header .header__inner .header__info-items .menu__image {
+.header .menu__image {
   position: relative;
   right: 20px;
   top: 5px;
 }
-.header .header__inner .header__info-items .menu__btn > span,
-.header .header__inner .header__info-items .menu__btn > span::after {
+.header .menu__btn > span, .header .menu__btn > span::after {
   display: block;
   position: absolute;
   width: 36px;
   height: 2px;
 }
-.header .header__inner .header__info-items .menu__btn > span::after {
+.header .menu__btn > span::after {
   content: "";
   top: 8px;
   width: 80%;
 }
-.header .header__inner .header__info-items .menu__box {
+.header .menu__box {
   display: flex;
   justify-content: center;
   position: fixed;
   visibility: hidden;
+  margin: 0px;
+  padding: 5em 0;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 5em 0;
   list-style: none;
   background-image: url(../../images/imgHeader/news-background.png);
   background-size: cover;
   opacity: 1;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 }
-.header .header__inner .header__info-items .menu__item {
+.header .menu__item {
   display: block;
   padding: 12px 24px;
   color: rgba(255, 255, 255, 0.4);
@@ -119,24 +119,111 @@
   font-weight: 600;
   text-decoration: none;
 }
-.header .header__inner .header__info-items .menu__item sup {
+.header .menu__item sup {
   margin: 20px;
 }
-.header .header__inner .header__info-items .menu__item .menu__columns {
-  background-image: url(/assets/style/imagesHeader/Vector.png);
+.header .menu__contacts, .header .menu__number {
+  display: none;
 }
-.header .header__inner .header__info-items .menu__item:hover {
+.header .menu__item:hover {
   color: #ffffff;
 }
-.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__btn > span {
+.header .menu #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
-.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__btn > span::after {
+.header .menu #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
   width: 100%;
 }
-.header .header__inner .header__info-items #menu__toggle:checked ~ .menu__box {
+.header .menu #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header__inner {
+    padding: 0 22px;
+  }
+  .header__eng, .header__rus, .header__number, .header__consult {
+    display: none;
+  }
+  .header__logo {
+    width: 140px;
+    height: 36px;
+  }
+  .header__hamburger {
+    margin-left: auto;
+  }
+  .header__columns {
+    padding-right: 25px;
+  }
+  .header .menu__image {
+    display: none;
+  }
+  .header .menu__btn {
+    width: 10px;
+    height: 0px;
+  }
+  .header .menu__item {
+    display: flex;
+    font-size: 20px;
+  }
+  .header .menu__contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .header .menu__number {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "PT Mono", monospace;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header__inner {
+    padding: 0 22px;
+  }
+  .header__eng, .header__rus {
+    display: none;
+  }
+  .header__number {
+    font-size: 16px;
+  }
+  .header__consult {
+    margin: 0 0;
+    padding-right: 30px;
+  }
+  .header__consult .btn {
+    padding: 10px 24px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .header__logo {
+    width: 140px;
+    height: 36px;
+  }
+  .header__hamburger {
+    margin-left: auto;
+  }
+  .header__columns {
+    padding-right: 25px;
+  }
+  .header .menu__image {
+    display: none;
+  }
+  .header .menu__btn {
+    width: 20px;
+    height: 10px;
+  }
+  .header .menu__item {
+    font-size: 40px;
+  }
 }/*# sourceMappingURL=header.css.map */
