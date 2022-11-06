@@ -1,11 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-$main-font: "Lato", sans-serif;
-$number-font: "PT Mono", monospace;
+$main-font: "Lato",
+sans-serif;
+$number-font: "PT Mono",
+monospace;
 $main-color: #ffffff;
-$color-text: rgba(255, 255, 255, 0.8);
-$paragraph-color: rgba(255, 255, 255, 0.8);
+$color-text: rgba(255,
+255,
+255,
+0.8);
+$paragraph-color: rgba(255,
+255,
+255,
+0.8);
 $main-blue-color: #000032;
-$color-hover: rgba(80, 39, 198, 1);
+$color-hover: rgba(80,
+39,
+198,
+1);
 @mixin un-sel {
     margin: 0;
     padding: 0;
@@ -26,8 +37,8 @@ $color-hover: rgba(80, 39, 198, 1);
         color: #ffffff;
         border: 1px solid #fff;
     }
-    .menu__btn > span,
-    .menu__btn > span::after {
+    .menu__btn>span,
+    .menu__btn>span::after {
         background-color: white;
     }
     .menu__btn {
@@ -80,7 +91,7 @@ $color-hover: rgba(80, 39, 198, 1);
         left: 0;
         transform: scale(0);
     }
-    .checkbox__input:checked + .checkbox__label::after {
+    .checkbox__input:checked+.checkbox__label::after {
         transform: scale(1);
     }
 }
@@ -146,13 +157,39 @@ $color-hover: rgba(80, 39, 198, 1);
     display: flex;
     justify-content: center;
 }
+
 @mixin flex-space-between {
     display: flex;
     justify-content: space-between;
 }
+
 @mixin page {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 920px;
+}
+
+@mixin bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 121%;
+}
+
+@mixin text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+@mixin label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
 }

@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
   width: 36px;
-  height: 26px;
+  height: 10px;
   cursor: pointer;
   z-index: 1;
 }
@@ -152,6 +152,7 @@
   .header__logo {
     width: 140px;
     height: 36px;
+    padding: 6px 24px;
   }
   .header__hamburger {
     margin-left: auto;
@@ -167,7 +168,6 @@
     height: 0px;
   }
   .header .menu__item {
-    display: flex;
     font-size: 20px;
   }
   .header .menu__contacts {
@@ -262,11 +262,8 @@ main {
   color: #ffffff;
 }
 
-.wrapper {
-  background-image: url("../../images/imgPageDesign/bg/bg_1.png");
-  background-size: cover;
-}
 .wrapper .desing-pg-one {
+  background-image: url("../../images/imgPageDesign/bg/bg_2.png");
   background-size: cover;
   padding-top: 147px;
   padding-bottom: 70px;
@@ -309,10 +306,11 @@ main {
 }
 .wrapper .desing-pg-two {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
   padding-bottom: 90px;
+  background-image: url("../../images/imgPageDesign/bg/bg_2.png");
   background-size: cover;
   padding-top: 80px;
 }
@@ -348,6 +346,8 @@ main {
   padding-bottom: 23px;
 }
 .wrapper .desing-pg-three {
+  background-image: url("../../images/imgPageDesign/bg/bg_2.png");
+  background-size: cover;
   padding: 50px 0;
 }
 .wrapper .desing-pg-three .desing-pg-three__container {
@@ -366,7 +366,7 @@ main {
 }
 .wrapper .desing-pg-three .desing-pg-three__container .card .card__head {
   color: black;
-  background: rgba(156, 53, 240, 0.605);
+  background: rgba(79, 39, 198, 0.558);
   padding: 0.5em;
   transform: rotate(-90deg);
   transform-origin: 0% 0%;
@@ -403,6 +403,8 @@ main {
   margin-right: 1em;
 }
 .wrapper .desing-pg-four {
+  background-image: url("../../images/imgPageDesign/bg/bg_2.png");
+  background-size: cover;
   padding-top: 80px;
 }
 .wrapper .desing-pg-four__gallery {
@@ -441,6 +443,8 @@ main {
   margin-left: 62px;
 }
 .wrapper .desing-pg-five {
+  background-image: url("../../images/imgPageDesign/bg/bg_2.png");
+  background-size: cover;
   padding: 90px 0 85px 0;
 }
 .wrapper .desing-pg-five__container {
@@ -474,7 +478,6 @@ main {
 }
 .wrapper .desing-pg-six__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 80%;
@@ -909,5 +912,11 @@ main {
     font-size: 25px;
     top: -90px;
     left: -80px;
+  }
+}
+@media (max-width: 330px) {
+  .wrapper .desing-pg-one__left-part h2 {
+    font-size: 21px;
+    line-height: 27px;
   }
 }/*# sourceMappingURL=style.css.map */

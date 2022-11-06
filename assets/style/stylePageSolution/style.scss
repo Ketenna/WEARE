@@ -1,11 +1,7 @@
 @import "../../style/styleHeader/header.scss";
 @import "../vars/vars.scss";
 
-@mixin bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+
 
 * {
     @include un-sel;
